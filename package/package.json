@@ -1,6 +1,6 @@
 {
-  "name": "firebase-jest-testing",
-  "version": "0.0.4-alpha.5",
+  "name": "firebase-jest-testing-fs",
+  "version": "0.1.0",
   "description": "Tools for testing Firebase back-end features, using Jest.",
   "license": "MIT",
   "repository": {
