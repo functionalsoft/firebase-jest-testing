@@ -1,6 +1,6 @@
 {
-  "name": "firebase-jest-testing",
-  "version": "0.0.5-alpha.1",
+  "name": "firebase-jest-testing-fs",
+  "version": "0.2.0",
   "description": "Tools for testing Firebase back-end features, using Jest.",
   "license": "MIT",
   "repository": {
@@ -24,7 +24,8 @@
     "./firestoreAdmin": "./src/firestoreAdmin/index.js",
     "./firestoreAdmin/setup": "./src/firestoreAdmin/setup/index.js",
     "./firestoreRules": "./src/firestoreRules/index.js",
-    "./firebaseClientLike": "./src/firebaseClientLike/index.js"
+    "./firebaseClientLike": "./src/firebaseClientLike/index.js",
+    "./storageAdmin": "./src/storageAdmin/index.js"
   },
   "engines": {
     "node": ">= 16.5",
@@ -38,9 +39,11 @@
   },
   "dependencies": {
     "firebase-admin": "^10.0.2",
-    "undici": "^4.16.0"
+    "undici": "^4.16.0",
+    "node-fetch": "3.1.1"
   },
   "//": {
+    "node-fetch": "Pinned to 3.1.3 to fix https://github.com/functionalsoft/cares/issues/1309",
     "engines.node": [
       "16.5 required by undici (fetch)"
     ],
